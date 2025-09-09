@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Global tweaks */
+* { -webkit-tap-highlight-color: transparent; }
+::selection { background-color: rgba(59,130,246,0.3); color: #e5e7eb; }
+
+/* Shared hover utility: fast lift + outline */
+.hover-card { @apply transition-all duration-150 hover:-translate-y-1 hover:shadow-[0_0_0_2px_rgba(59,130,246,0.35)]; }
+.hover-outline { @apply hover:border-blue-500/40; }
+
+/* Performance tweaks */
+img, svg { shape-rendering: geometricPrecision; }
+* { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+/* Theme variables */
+:root {
+  --bg: #0b1220;          /* slate-950-ish */
+  --fg: #e5e7eb;          /* slate-200 */
+  --surface: rgba(30,41,59,0.30);      /* slate-800/30 */
+  --surface-solid: rgba(15,23,42,0.70);/* slate-900/70 */
+  --border: rgba(51,65,85,0.50);       /* slate-700/50 */
+}
+html[data-theme="light"] {
+  --bg: #f8fafc;          /* slate-50 */
+  --fg: #0f172a;          /* slate-900 */
+  --surface: rgba(148,163,184,0.15);   /* slate-400/15 */
+  --surface-solid: rgba(255,255,255,0.85);
+  --border: rgba(100,116,139,0.35);    /* slate-500/35 */
+}
