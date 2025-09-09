@@ -97,7 +97,6 @@ export default function Experience() {
                           animate={{}}
                           // control hover speed
                           // framer uses the closest transition; add a short one for hover interactions
-                          // eslint-disable-next-line react/forbid-dom-props
                           style={{ borderRadius: 12 }}
                         >
                           <div className="flex items-center space-x-3 p-4 rounded-lg bg-slate-700/30 border border-slate-600/50 transition-[background-color,border-color] duration-150 hover:bg-blue-600/15 hover:border-blue-400">
