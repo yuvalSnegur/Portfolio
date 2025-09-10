@@ -23,7 +23,7 @@ export default function Skills() {
         { name: "Python", level: 95 },
         { name: "JavaScript", level: 90 },
         { name: "SQL", level: 85 },
-        { name: "Java", level: 80 },
+        { name: "Java", level: 90 },
         { name: "C", level: 85 },
         { name: "C++", level: 85 }
       ]
@@ -38,7 +38,7 @@ export default function Skills() {
         { name: "scikit-learn", level: 95 },
         { name: "pandas", level: 90 },
         { name: "NumPy", level: 95 },
-        { name: "OpenAI API", level: 85 },
+        { name: "OpenAI API", level: 90 },
         { name: "NLP", level: 90 },
         { name: "Tokenization", level: 85 }
       ]
@@ -51,8 +51,8 @@ export default function Skills() {
         { name: "HTML5", level: 95 },
         { name: "CSS", level: 90 },
         { name: "React", level: 90 },
-        { name: "Bootstrap", level: 85 },
-        { name: "Material UI", level: 80 }
+        { name: "Bootstrap", level: 100 },
+        { name: "Material UI", level: 100 }
       ]
     },
     {
@@ -61,10 +61,10 @@ export default function Skills() {
       gradient: "from-orange-500 to-red-600",
       skills: [
         { name: "Node.js", level: 85 },
-        { name: "Express.js", level: 80 },
+        { name: "Express.js", level: 85 },
         { name: "REST APIs", level: 90 },
-        { name: "MongoDB", level: 85 },
-        { name: "SQL Databases", level: 90 }
+        { name: "MongoDB", level: 95 },
+        { name: "SQL Databases", level: 95 }
       ]
     },
     {
@@ -74,7 +74,7 @@ export default function Skills() {
       skills: [
         { name: "Git", level: 90 },
         { name: "Docker", level: 75 },
-        { name: "Postman", level: 85 },
+        { name: "Postman", level: 90 },
         { name: "VSCode", level: 95 }
       ]
     },
