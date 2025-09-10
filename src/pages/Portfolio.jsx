@@ -1,10 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
-import Navigation from "@/Components/Navigation.jsx";
-import Hero from "@/Components/Hero.jsx";
-import About from "@/Components/About.jsx";
-import Projects from "@/Components/Projects.jsx";
-import Experience from "@/Components/Experience.jsx";
-import Skills from "@/Components/Skills.jsx";
+import Navigation from "@/components/Navigation.jsx";
+import Hero from "@/components/Hero.jsx";
+import About from "@/components/About.jsx";
+import Projects from "@/components/Projects.jsx";
+import Experience from "@/components/Experience.jsx";
+import Skills from "@/components/Skills.jsx";
 import AnimatedGrid from "@/components/background/AnimatedGrid.jsx";
 import GradientBlobs from "@/components/background/GradientBlobs.jsx";
 import ScrollProgress from "@/components/common/ScrollProgress.jsx";
