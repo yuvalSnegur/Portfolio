@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
-import ThemeToggle from "@/components/common/ThemeToggle.jsx";
 
 export default function Footer() {
   const [hidden, setHidden] = useState(false);
   const lastY = useRef(0);
+
   useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY || 0;
@@ -17,6 +17,7 @@ export default function Footer() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
   const links = [
     { href: "mailto:yuvals00111@gmail.com", label: "Email", icon: Mail },
     { href: "https://www.linkedin.com/in/yuval-snegur/", label: "LinkedIn", icon: Linkedin },
@@ -35,7 +36,6 @@ export default function Footer() {
             © {new Date().getFullYear()} • React • Vite • Tailwind
           </div>
           <div className="flex items-center gap-2">
-            <ThemeToggle />
             {links.map((l) => (
               <a
                 key={l.label}
@@ -54,5 +54,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-
